@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //New comment from gitHub
         tvDisplay = findViewById(R.id.tvUserDisplay);
         etInput = findViewById(R.id.etUserInput);
         etUserInputThree = findViewById(R.id.etUserInputThree);
