@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String TAG = "TAG_MAIN_ACT";
     private TextView tvDisplay;
     private EditText etInput;
+    private EditText etUserInputThree;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         tvDisplay = findViewById(R.id.tvUserDisplay);
         etInput = findViewById(R.id.etUserInput);
+        etUserInputThree = findViewById(R.id.etUserInputThree);
         //logd
         Log.d(TAG, "onCreate: ");
     }
@@ -69,7 +71,13 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.btnDoSomething:
                 final String input = etInput.getText().toString();
-                tvDisplay.setText(input);
+                if(etUserInputThree == null) {
+                    tvDisplay.setText(input);
+                } else {
+                    final String input3 = etUserInputThree.getText().toString();
+                    tvDisplay.setText(input + " " + input3);
+                }
+
                 Log.d("TAG_CLICKED", String.format(Locale.US,"User entered %s", input));
                 break;
             case R.id.tvUserDisplay:

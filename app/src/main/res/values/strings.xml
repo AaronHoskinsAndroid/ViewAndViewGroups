@@ -3,4 +3,5 @@
     <string name="user_input_hint">Enter a string to display</string>
     <string name="text_for_button">Click to transfer string to textview</string>
     <string name="goto_second_activity">Goto Second Activity</string>
+    <string name="user_input_2">User Input 2</string>
 </resources>
