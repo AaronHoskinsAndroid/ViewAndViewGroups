@@ -57,5 +57,11 @@
         android:onClick="buttonClicked"
         style="@style/BaseMargins"/>
 
+    <Button
+        android:id="@+id/btnStartImplicitActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start_implicit_activity"
+        android:onClick="startImpicitActivity"/>
 
 </LinearLayout>

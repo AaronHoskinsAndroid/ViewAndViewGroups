@@ -4,4 +4,5 @@
     <string name="text_for_button">Click to transfer string to textview</string>
     <string name="goto_second_activity">Goto Second Activity</string>
     <string name="user_input_2">User Input 2</string>
+    <string name="start_implicit_activity">Start Implicit Activity</string>
 </resources>
